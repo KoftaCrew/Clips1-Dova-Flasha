@@ -43,11 +43,11 @@
     defrule caluclate-gpa
     ?f <- (
         person 
-        (name ?name) 
-                (course-1 ?c1) 
-                (course-2 ?c2) 
-                (course-3 ?c3) 
-                (course-4 ?c4)
+            (name ?name) 
+            (course-1 ?c1) 
+            (course-2 ?c2) 
+            (course-3 ?c3) 
+            (course-4 ?c4)
         )
     =>
     (bind ?gpa (/ (+ (+ (+ ?c4 ?c3) ?c2) ?c1) 4.0))
